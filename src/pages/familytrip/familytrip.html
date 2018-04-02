@@ -1,0 +1,51 @@
+<!--
+  Generated template for the FamilytripPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>familytrip</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div col-12 padding>
+        <img src="{{info.src}}">
+        <p class="loc"> {{info.loc}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped ? 'add-circle' : 'remove-circle'" (click)="toggleZipped()" (click)="onButtonClick()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked">{{info.description}}</p>
+        <h6> {{info.price}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+                <ion-icon name="md-home"></ion-icon>
+                Rooms
+              </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                  Tickets
+                  <ion-icon name="md-plane"></ion-icon>
+                </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+                Maps
+                <ion-icon name="md-navigate"></ion-icon>
+              </button></a>
+
+        </div>
+    </div>
+    <div class="border"></div>
+</ion-content>

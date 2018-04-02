@@ -1,0 +1,185 @@
+<!--
+  Generated template for the ScubaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{info.title}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <h6 style="line-height: 0px; padding-left: 17px;">Top 5 locations of india</h6>
+    <div col-12 padding>
+        <img src="{{info.src}}">
+        <p class="loc"> {{info.loc}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped ? 'add-circle' : 'remove-circle'" (click)="toggleZipped()" (click)="onButtonClick()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked">{{info.description}}</p>
+        <h6> {{info.price}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+                <ion-icon name="md-home"></ion-icon>
+                Rooms
+              </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                  Tickets
+                  <ion-icon name="md-plane"></ion-icon>
+                </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+                Maps
+                <ion-icon name="md-navigate"></ion-icon>
+              </button></a>
+
+        </div>
+    </div>
+    <div class="border"></div>
+    <div col-12 padding>
+        <img src="{{info.src1}}">
+        <p class="loc"> {{info.loc1}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped1 ? 'add-circle' : 'remove-circle'" (click)="toggleZipped1()" (click)="onButtonClick1()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked1"> {{info.description1}}</p>
+        <h6> {{info.price1}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+              <ion-icon name="md-home"></ion-icon>
+              Rooms
+            </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                Tickets
+                <ion-icon name="md-plane"></ion-icon>
+              </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+              Maps
+              <ion-icon name="md-navigate"></ion-icon>
+            </button></a>
+
+
+        </div>
+    </div>
+    <div class="border"></div>
+    <div col-12 padding>
+        <img src="{{info.src2}}">
+        <p class="loc"> {{info.loc2}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped2 ? 'add-circle' : 'remove-circle'" (click)="toggleZipped2()" (click)="onButtonClick2()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked2"> {{info.description2}}</p>
+        <h6> {{info.price2}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+              <ion-icon name="md-home"></ion-icon>
+              Rooms
+            </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                Tickets
+                <ion-icon name="md-plane"></ion-icon>
+              </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+              Maps
+              <ion-icon name="md-navigate"></ion-icon>
+            </button></a>
+
+
+        </div>
+    </div>
+    <div class="border"></div>
+    <div col-12 padding>
+        <img src="{{info.src3}}">
+        <p class="loc"> {{info.loc3}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped3 ? 'add-circle' : 'remove-circle'" (click)="toggleZipped3()" (click)="onButtonClick3()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked3"> {{info.description3}}</p>
+        <h6> {{info.price3}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+              <ion-icon name="md-home"></ion-icon>
+              Rooms
+            </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                Tickets
+                <ion-icon name="md-plane"></ion-icon>
+              </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+              Maps
+              <ion-icon name="md-navigate"></ion-icon>
+            </button></a>
+
+
+        </div>
+    </div>
+    <div class="border"></div>
+    <div col-12 padding>
+        <img src="{{info.src4}}">
+        <p class="loc"> {{info.loc4}}</p>
+        <h4>
+            <ion-icon class="addcircle" [name]="zipped4 ? 'add-circle' : 'remove-circle'" (click)="toggleZipped4()" (click)="onButtonClick4()"></ion-icon>
+            Description:</h4>
+        <p class="add" *ngIf="buttonClicked4"> {{info.description4}}</p>
+        <h6> {{info.price4}}</h6>
+        <p>Rateing: <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span></p>
+        <div col-12>
+            <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+                <button ion-button icon-start>
+              <ion-icon name="md-home"></ion-icon>
+              Rooms
+            </button></a>
+            <a href="https://www.makemytrip.com/flights/">
+                <button ion-button icon-end>
+                Tickets
+                <ion-icon name="md-plane"></ion-icon>
+              </button></a>
+
+            <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+              Maps
+              <ion-icon name="md-navigate"></ion-icon>
+            </button></a>
+        </div>
+    </div>
+    <div class="border"></div>
+</ion-content>

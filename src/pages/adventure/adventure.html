@@ -1,0 +1,66 @@
+<!--
+  Generated template for the AdventurePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Adventures</ion-title>
+        <button ion-button menuToggle>
+      <ion-icon name = "menu"></ion-icon>
+    </button>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+
+    <ion-row>
+        <ion-col col-12>
+            <ion-slides pager class="slideimg">
+
+                <ion-slide class="advimg" style="  background-image: url(assets/imgs/waterslide1.png)">
+
+
+
+                </ion-slide>
+
+                <ion-slide class="advimg" style="  background-image: url(assets/imgs/waterslide2.png)">
+
+
+
+                </ion-slide>
+                <ion-slide class="advimg" style="  background-image: url(assets/imgs/waterslide3.png)">
+
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+    <ion-row style="padding-top: 20px;">
+        <ion-col class="advimg_txt advimg pd" (click)="wateradv()" col-6>
+            <ion-img class="advimg" (click)="wateradv()" style=" background-image: url(assets/imgs/Wateradv.png)"></ion-img>
+            <p (click)="wateradv()"> Water Adventure </p>
+        </ion-col>
+        <ion-col class="advimg_txt advimg pd" (click)="skyadv()" col-6>
+            <ion-img class="advimg" (click)="skyadv()" style=" background-image: url(assets/imgs/skyadv.png)"></ion-img>
+            <p (click)="skyadv()"> Sky Adventure </p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row style="padding-top: 20px;">
+        <ion-col class="advimg_txt advimg pd" col-6 (click)="roadadv()">
+            <ion-img class="advimg" style="  background-image: url(assets/imgs/landadv.png)"></ion-img>
+            <p (click)="roadadv()"> Road Adventure </p>
+        </ion-col>
+        <ion-col class="advimg_txt advimg pd" (click)="wateradv()" col-6>
+            <ion-img class="advimg" style=" background-image: url(assets/imgs/thingadv.png)"></ion-img>
+            <p class="things" (click)="wateradv()">Things To DO </p>
+        </ion-col>
+    </ion-row>
+
+
+
+</ion-content>

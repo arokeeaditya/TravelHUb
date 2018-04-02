@@ -1,0 +1,40 @@
+<ion-header>
+    <!-- <ion-navbar>
+        <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+        <ion-title>Home</ion-title>
+    </ion-navbar> -->
+    <ion-toolbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Travel</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <img src="">
+    <!--ion-refresher-->
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <ion-list *ngFor="let item of data">
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="{{item.thumbnail}}">
+            </ion-thumbnail>
+            <h5 style="text-overflow:initial">{{ item.title}}</h5>
+            <button ion-button clear item-end (click)=" nav(item) ">View</button>
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content ng-value="7" loadingSpinner="bubbles" loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,23 @@
+page-top {
+    .waterlist ion-item {
+        cursor: pointer;
+    }
+    .item-md ion-thumbnail ion-img,
+    .item-md ion-thumbnail img {
+        border-radius: 50px
+    }
+    .list-md .item-block .item-inner {
+        border-bottom: none;
+    }
+    .item-md {
+        padding: 3px;
+    }
+    .input-wrapper {
+        font-size: 18px;
+        color: #ed143dd4;
+        font-family: inherit;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+}

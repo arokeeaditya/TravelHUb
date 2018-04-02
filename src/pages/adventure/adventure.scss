@@ -1,0 +1,51 @@
+page-adventure {
+    img {
+        height: 140px
+    }
+    .advimg {
+        border-radius: 8px;
+        width: 100%;
+        height: 140px;
+        cursor: pointer;
+        position: relative;
+        background-size: cover;
+    }
+    .advimg img {
+        border-radius: 10px
+    }
+    .advimg_txt p {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 700;
+        color: white;
+        bottom: 4px;
+        position: absolute;
+        cursor: pointer;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-family: 'Roboto Slab', serif;
+    }
+    // .waterslide p {
+    //     color: black;
+    //     font-family: 'Roboto Slab', serif;
+    //     font-weight: bold;
+    //     font-size: 12px;
+    //     text-align: center;
+    // }
+    .adventure {
+        text-align: center;
+        color: #FA5955;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: unset;
+        line-height: 0.2;
+        letter-spacing: 2px;
+    }
+    .things {
+        padding-left: 1px;
+        color: black !important;
+    }
+    pd {
+        padding: 4px
+    }
+}

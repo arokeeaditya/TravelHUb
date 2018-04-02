@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "cordova-plugin-inappbrowser": "registry:dt/cordova-plugin-inappbrowser#0.0.0+20170120190647",
+    "firebase": "registry:dt/firebase#2.4.1+20160510002910"
+  }
+}

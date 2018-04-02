@@ -1,0 +1,89 @@
+<!--
+  Generated template for the HillstationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Hillstation info</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div col-12>
+
+        <ion-slides pager class="slideimg">
+
+            <ion-slide class="advimg">
+
+                <img src="{{info.src}}">
+
+            </ion-slide>
+
+            <ion-slide class="advimg">
+
+                <img src="{{info.src1}}">
+
+            </ion-slide>
+            <ion-slide class="advimg">
+                <img src="{{info.src2}}">
+            </ion-slide>
+            <ion-slide class="advimg">
+
+                <img src="{{info.src3}}">
+
+            </ion-slide>
+            <ion-slide class="advimg">
+                <img src="{{info.src4}}">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <p class="loc"> State: {{info.loc}}</p>
+    <h4>
+        <ion-icon class="addcircle" [name]="zipped ? 'add-circle' : 'remove-circle'" (click)="toggleZipped()" (click)="onButtonClick()"></ion-icon>
+        Description:</h4>
+    <p class="add" *ngIf="buttonClicked">{{info.description}}</p>
+    <h6> {{info.price}}</h6>
+
+    <h6>
+        <ion-icon class="tcolor" name="train">
+        </ion-icon> How to reach by Train: </h6>
+    <p> {{info.Train}}</p>
+
+    <h6>
+        <ion-icon class="tcolor" name="bus"></ion-icon>
+        How to reach by Bus: </h6>
+    <p> {{info.Bus}}</p>
+    <h6>
+        <ion-icon class="tcolor" name="plane"></ion-icon> How to reach by Air: </h6>
+    <p>{{info.Air}}</p>
+    <p>Rateing: <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></p>
+    <div col-12>
+        <a href="https://www.oyorooms.com/?gclid=EAIaIQobChMI_uTektiF2gIVwQorCh2MEg00EAAYASAAEgIZffD_BwE&ef_id=WoLPkAAAAQ9A4S7W:20180324192555:s">
+            <button ion-button icon-start>
+                <ion-icon name="md-home"></ion-icon>
+                Rooms
+              </button></a>
+        <a href="https://www.makemytrip.com/flights/">
+            <button ion-button icon-end>
+                  Tickets
+                  <ion-icon name="md-plane"></ion-icon>
+                </button></a>
+
+        <a href="https://www.google.co.in/maps/search/"> <button ion-button icon-end>
+                Maps
+                <ion-icon name="md-navigate"></ion-icon>
+              </button></a>
+
+    </div>
+
+
+</ion-content>

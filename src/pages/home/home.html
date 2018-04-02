@@ -1,0 +1,138 @@
+<ion-header>
+    <!-- <ion-navbar>
+        <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+        <ion-title>Home</ion-title>
+    </ion-navbar> -->
+    <ion-toolbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher> -->
+    <div>
+        <ion-searchbar ng-bind-html="h4.name">
+        </ion-searchbar>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/cMZ_wDlBx8E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4 name="dargeeling">Darjeeling</h4>
+        </div>
+        <hr>
+
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CeeDkCmYcPw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Leh-Ladakh</h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/fwhig1ZEmEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Shimla</h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SpoHmDDCUic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Nainital</h4>
+        </div>
+        <hr>
+        <div>
+
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LBwzgH-DisE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Manali</h4>
+        </div>
+        <hr>
+
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/879ELzhugYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Mussoorie</h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/53tub6ojwlo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Gulmarg </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/w5Rhz8JRu2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Shillong </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/_SdxQG26sFc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Gangtok || Sikkim </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/B24ElwGA790" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Kodaikanal </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/y2CXVhHThBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Ooty </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/dFMY6XViWYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Srinagar </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/y2CXVhHThBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Munnar </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4d2rbn06vTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Tawang </h4>
+        </div>
+        <hr>
+        <div>
+
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lHGk8ClWqkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Mount Abu </h4>
+        </div>
+        <hr>
+    </div>
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content ng-value="7" loadingSpinner="bubbles" loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <!--ion-refresher-->
+
+
+
+    <!-- <ion-list *ngFor="let item of data ">
+        <ion-item (click)=" nav(item) ">
+            <ion-thumbnail item-start>
+                <img class="thumb" src="{{item.thumbnail}}">
+            </ion-thumbnail>
+            <h5 style="text-overflow:initial">{{ item.title}}</h5>
+            <!-- <button ion-button clear item-end >View</button> -->
+    <!-- </ion-item>
+    </ion-list> -->-->
+
+
+</ion-content>

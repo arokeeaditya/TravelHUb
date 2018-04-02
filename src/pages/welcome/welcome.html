@@ -1,0 +1,52 @@
+<!--
+  Generated template for the ScubaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding="true">
+
+
+    <ion-title>{{info.title}}</ion-title>
+
+
+
+    <div col-12>
+
+        <h3> {{info.pubDate}}</h3>
+        <img src="{{info.thumbnail}}">
+        <h4>
+            <!-- <ion-icon class="addcircle" [name]="zipped ? 'add-circle' : 'remove-circle'" (click)="toggleZipped()" (click)="onButtonClick()"></ion-icon> -->
+            &nbsp; Description:</h4>
+        <p class="add">{{info.description}}</p>
+        <h6>{{info.price}}</h6>
+        <p>{{info.link}}</p>
+        <p>{{info.pubDate}}</p>
+    </div>
+</ion-content>
+<!-- <div col-12>
+            <button ion-button icon-start>
+              <ion-icon name="md-home"></ion-icon>
+              Rooms
+            </button>
+            <button ion-button icon-end>
+                Tickets
+                <ion-icon name="md-plane"></ion-icon>
+              </button>
+
+            <button ion-button icon-end>
+              Maps
+              <ion-icon name="md-navigate"></ion-icon>
+            </button>
+
+
+        </div> -->
